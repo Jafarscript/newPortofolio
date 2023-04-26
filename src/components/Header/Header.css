@@ -4,13 +4,13 @@
     padding: 10px 100px;
     align-items: center;
 }
-nav{
+.navBar{
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-nav ul{
+.navLink ul{
     display: flex;
     gap: 30px;
     font-weight: 400;
@@ -18,9 +18,80 @@ nav ul{
 }
 
 
-nav button{
+.navBar .contactBtn{
     background: #3474F3;
     border-radius: 6px;
     color: #fff;
     padding: 12px 21px;
+}
+
+.navToggler{
+    font-size: 1.25rem;
+    display: none;
+}
+
+
+@media(max-width: 870px){
+    .header{
+        padding: 10px 50px;
+    }
+
+    .navBar{
+        gap: 20px;
+    }
+
+}
+
+@media(max-width: 750px){
+    .header{
+        padding: 10px 30px;
+        position: relative;
+    }
+
+    .navBar{
+        gap: 10px;
+    }
+
+    .contactBtn{
+        display: none;
+    }
+
+    .navToggler{
+        display: block;
+    }
+
+    .navLink{
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        height: 0px;
+        transition: all 1s ease-in-out;
+        overflow: hidden;
+    }
+
+    .navLink ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        /* margin-bottom: 20px; */
+    }
+
+    .navLink ul li{
+        padding: 15px 0px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #F7F3F3;
+    }
+
+    .navLink ul li:hover{
+        background-color: #F7F3F3;
+    }
+
+    .expanded{
+        height: 165px;
+        transition: all 1s ease-in-out;
+    }
 }
