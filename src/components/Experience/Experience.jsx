@@ -9,7 +9,7 @@ const Experience = ({dark}) => {
     settoogleSelect(index)
   }
   return (
-    <section className='experience'>
+    <section className='experience' id='about'>
         <h1>My experience</h1>
         <div className="company">
             <div className="name">

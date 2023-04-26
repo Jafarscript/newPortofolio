@@ -5,7 +5,7 @@ import './Hero.css'
 
 const Hero = ({dark}) => {
   return (
-    <section className='hero'>
+    <section className='hero' id='hero'>
         <h1>Hello I’m <br></br>Jafar Li-Hammed </h1>
         <p className='breif'>I am a UI Engineer at Google, where I design and develop user-centered interfaces for cutting-edge technology products. I work with a talented team to create visually appealing and intuitive designs that enhance user experience. I am passionate about using technology to create beautiful and functional designs that solve real-world problems.</p>
         <div className="skills">
