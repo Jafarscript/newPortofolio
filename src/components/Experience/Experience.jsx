@@ -1,13 +1,13 @@
-import React,{useState} from 'react'
+// import React,{useState} from 'react'
 import {IoIosArrowForward} from 'react-icons/io'
 import './Experience.css'
 
 const Experience = ({dark}) => {
-    const [toogleSelect, settoogleSelect] = useState(3)
+//     const [toogleSelect, settoogleSelect] = useState(3)
 
-  const selected = (index) =>{
-    settoogleSelect(index)
-  }
+//   const selected = (index) =>{
+//     settoogleSelect(index)
+//   }
   return (
     <section className='experience' id='about'>
         <h1>My experience</h1>

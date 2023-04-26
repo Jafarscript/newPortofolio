@@ -7,7 +7,7 @@ const Hero = ({dark}) => {
   return (
     <section className='hero' id='hero'>
         <h1>Hello I’m <br></br>Jafar Li-Hammed </h1>
-        <p className='breif'>I am a UI Engineer at Google, where I design and develop user-centered interfaces for cutting-edge technology products. I work with a talented team to create visually appealing and intuitive designs that enhance user experience. I am passionate about using technology to create beautiful and functional designs that solve real-world problems.</p>
+        <p className='breif'>I am a creative problem-solver who thrives on designing and building beautiful, user-friendly interfaces. I have a keen eye for detail and a deep understanding of HTML, CSS, and JavaScript. I am passionate about staying up-to-date with the latest frontend development trends and techniques, and I am always looking for ways to improve the user experience of the products I work on. I am a great collaborator, able to work closely with designers, developers, and other stakeholders to create seamless and engaging user interfaces. My goal is to create intuitive, responsive, and visually appealing designs that make a positive impact on the end-user experience.</p>
         <div className="skills">
             <span className={dark ? 'skill skillDark' : 'skill skillLight'}><FaHtml5 />HTML</span>
             <span className={dark ? 'skill skillDark' : 'skill skillLight'}><FaCss3 />CSS</span>

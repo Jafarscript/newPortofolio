@@ -19,7 +19,7 @@ const Header = ({dark, setDark}) => {
               <a href="#about">About</a>
             </li>
             <li>
-              <a href="#">Work</a>
+              <a href="#work">Work</a>
             </li>
           </ul>
         </nav>
