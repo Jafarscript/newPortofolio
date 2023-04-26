@@ -24,9 +24,9 @@ const Header = ({dark, setDark}) => {
           </ul>
         </nav>
         <a href="https://github.com/Jafarscript">
-          <FaGithub style={{ fontSize: "1.2rem" }} />
+          <FaGithub style={{ fontSize: "1.4rem" }} />
         </a>
-        <TbBrightnessUp style={{ cursor: "pointer", fontSize: "1.2rem" }} onClick={() => setDark(!dark)} />
+        <TbBrightnessUp style={{ cursor: "pointer", fontSize: "1.4rem" }} onClick={() => setDark(!dark)} />
         <button className="contactBtn">{"Contact me ->"}</button>
         <button
           className="navToggler"

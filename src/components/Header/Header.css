@@ -33,7 +33,7 @@
 
 @media(max-width: 870px){
     .header{
-        padding: 10px 50px;
+        padding: 20px 50px;
     }
 
     .navBar{
@@ -44,12 +44,12 @@
 
 @media(max-width: 750px){
     .header{
-        padding: 10px 30px;
+        padding: 20px 30px;
         position: relative;
     }
 
     .navBar{
-        gap: 10px;
+        gap: 20px;
     }
 
     .contactBtn{
