@@ -1,0 +1,105 @@
+.experience{
+    padding: 92px 100px;
+}
+
+.each{
+    display: flex;
+    gap: 20px;
+    padding: 20px 20px;
+}
+.each img{
+    width: 36px;
+    height: 36px;
+}
+
+.experience h1{
+    font-weight: 700;
+    font-size: 48px;
+    color: #111827;
+    margin-bottom: 42px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+.info h4{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.info span{
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.selected {
+    background: #E3E8ED;
+    border-radius: 5px;
+}
+
+.company{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+}
+
+.response{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.position{
+    display: flex;
+    flex-direction: column;
+}
+
+.position h4{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.position p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #6B7280;
+}
+
+.response span{
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.icon{
+    color: '#2563EB'
+}
+
+.Comap{
+    color: #2563EB;
+}
+
+
+@media(max-width: 870px){
+    .experience{
+        padding: 92px 50px;
+    }
+
+    .company{
+        gap: 32px;
+    }
+}
+
+
+@media(max-width: 750px){
+    .experience{
+        padding: 92px 30px;
+    }
+    .company{
+        grid-template-columns: 1fr;
+    }
+
+    .experience h1{
+        font-size: 30px;
+    }
+}
