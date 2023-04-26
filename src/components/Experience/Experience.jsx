@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import {IoIosArrowForward} from 'react-icons/io'
 import './Experience.css'
 
-const Experience = () => {
+const Experience = ({dark}) => {
     const [toogleSelect, settoogleSelect] = useState(3)
 
   const selected = (index) =>{
@@ -13,7 +13,7 @@ const Experience = () => {
         <h1>My experience</h1>
         <div className="company">
             <div className="name">
-                <div className="each selected">
+                <div className={dark ? "each selectedDark" : "each selected"}>
                     <img src="https://res.cloudinary.com/dvo8xhx6r/image/upload/v1682539451/WhatsApp_Image_2023-04-26_at_8.51.04_PM_bmwtro.jpg" alt="marusoft" />
                     <div className="info">
                         <h4>Marusoft</h4>

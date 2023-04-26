@@ -4,7 +4,7 @@ import { FaGithub, FaBars } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
 import { TbBrightnessUp } from "react-icons/tb";
 
-const Header = () => {
+const Header = ({dark, setDark}) => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   return (
     <section className="header">
@@ -26,7 +26,7 @@ const Header = () => {
         <a href="https://github.com/Jafarscript">
           <FaGithub style={{ fontSize: "1.2rem" }} />
         </a>
-        <TbBrightnessUp style={{ cursor: "pointer", fontSize: "1.2rem" }} />
+        <TbBrightnessUp style={{ cursor: "pointer", fontSize: "1.2rem" }} onClick={() => setDark(!dark)} />
         <button className="contactBtn">{"Contact me ->"}</button>
         <button
           className="navToggler"

@@ -11,7 +11,6 @@
     font-weight: 700;
     font-size: 60px;
     text-align: center;
-    color: #111827;
 }
 
 .hero .breif{
@@ -26,15 +25,24 @@
     justify-content: space-between;
 }
 
-.skills span{
+
+
+.skill{
     display: flex;
     align-items: center;
-    padding: 3px 8px;
+    padding: 5px 10px;
     gap: 5px;
-    background: #E3E8ED;
     border-radius: 3px;
     font-size: 1rem;
     font-weight: 400;
+}
+
+.skillLight{
+    background: #E3E8ED;
+}
+
+.skillDark{
+    background: #172135;
 }
 
 @media(max-width: 870px){

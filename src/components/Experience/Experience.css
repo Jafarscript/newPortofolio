@@ -15,7 +15,6 @@
 .experience h1{
     font-weight: 700;
     font-size: 48px;
-    color: #111827;
     margin-bottom: 42px;
 }
 .info {
@@ -35,6 +34,11 @@
 
 .selected {
     background: #E3E8ED;
+    border-radius: 5px;
+}
+
+.selectedDark{
+    background-color: #172135;
     border-radius: 5px;
 }
 
