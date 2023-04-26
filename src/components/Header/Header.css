@@ -1,0 +1,26 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px;
+    align-items: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+
+nav button{
+    background: #3474F3;
+    border-radius: 6px;
+    color: #fff;
+    padding: 12px 21px;
+}
