@@ -1,0 +1,84 @@
+.hero{
+    padding: 92px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* align-items: center; */
+}
+
+
+.hero h1{
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
+    color: #111827;
+}
+
+.hero .breif{
+    font-weight: 700;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    color: #898989;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills span{
+    display: flex;
+    align-items: center;
+    padding: 3px 8px;
+    gap: 5px;
+    background: #E3E8ED;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media(max-width: 870px){
+    .hero{
+        padding: 92px 50px;
+    }
+
+    .skills{
+        gap: 5px;
+    }
+}
+
+@media(max-width: 750px){
+    .hero{
+        padding: 92px 30px;
+    }
+
+    .hero .breif{
+        font-size: 1.3rem;
+    }
+
+    .skills{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .skills span{
+        margin-bottom: 10px;
+        justify-self: center;
+    }
+
+    .hero h1{
+        font-size: 32px;
+    }
+}
+
+@media(max-width: 300px){
+    .skills{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero .breif{
+        font-size: 1rem;
+    }
+}

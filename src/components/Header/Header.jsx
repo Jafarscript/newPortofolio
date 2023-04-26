@@ -13,13 +13,13 @@ const Header = () => {
         <nav className={ isNavExpanded ? 'navLink expanded' : 'navLink'} onClick={() => {setIsNavExpanded(!isNavExpanded)}}>
           <ul>
             <li>
-              <a href="">Home</a>
+              <a href="#">Home</a>
             </li>
             <li>
-              <a href="">About</a>
+              <a href="#">About</a>
             </li>
             <li>
-              <a href="">Work</a>
+              <a href="#">Work</a>
             </li>
           </ul>
         </nav>
