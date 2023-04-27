@@ -1,0 +1,46 @@
+.contact{
+    padding: 92px 100px;
+}
+
+.contact h1{
+    padding: 42px;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.light{
+    background: #E3E8ED;
+}
+
+.dark{
+    background-color: #172135;
+}
+
+@media(max-width: 870px){
+    .contact{
+        padding: 92px 50px;
+    }
+
+    .contact h1{
+        font-size: 42px;
+    }
+}
+
+@media(max-width: 750px){
+    .contact{
+        padding: 92px 50px;
+    }
+
+    .contact h1{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 300px){
+
+    .contact{
+        padding: 92px 10px;
+    }
+}
