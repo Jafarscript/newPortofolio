@@ -4,3 +4,31 @@
     padding: 35px 100px;
     align-items: center;
 }
+
+.footer .navBar a{
+    font-size: 1.4rem;
+}
+
+
+@media(max-width: 870px){
+    .footer{
+        padding: 35px 50px;
+    }
+}
+
+@media(max-width: 750px){
+    .footer{
+        padding: 20px 30px;
+    }
+
+    .footer .navBar a{
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 300px){
+
+    .footer{
+        padding: 20px 10px;
+    }
+}

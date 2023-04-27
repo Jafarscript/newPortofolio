@@ -8,16 +8,16 @@ const Footer = () => {
       <div>jafarscript</div>
       <div className="navBar">
         <a href="https://github.com/Jafarscript">
-          <FaGithub style={{ fontSize: "1.4rem" }} />
+          <FaGithub  />
         </a>
         <a href="https://www.linkedin.com/in/jafar-li-hammed-8817a91b4/">
-          <FaLinkedin style={{ fontSize: "1.4rem" }} />
+          <FaLinkedin  />
         </a>
         <a href="https://web.facebook.com/jafar.olamide">
-          <FaFacebookF style={{ fontSize: "1.4rem" }} />
+          <FaFacebookF  />
         </a>
         <a href="https://www.linkedin.com/in/jafar-li-hammed-8817a91b4/">
-          <FaTwitter style={{ fontSize: "1.4rem" }} />
+          <FaTwitter  />
         </a>
       </div>
     </section>
