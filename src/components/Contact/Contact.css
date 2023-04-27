@@ -30,7 +30,7 @@
 
 @media(max-width: 750px){
     .contact{
-        padding: 92px 50px;
+        padding: 50px 50px;
     }
 
     .contact h1{
@@ -41,6 +41,6 @@
 @media(max-width: 300px){
 
     .contact{
-        padding: 92px 10px;
+        padding: 50px 10px;
     }
 }

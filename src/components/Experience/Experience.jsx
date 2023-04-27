@@ -16,7 +16,7 @@ const Experience = ({dark}) => {
                 <div className={dark ? "each selectedDark" : "each selected"}>
                     <img src="https://res.cloudinary.com/dvo8xhx6r/image/upload/v1682539451/WhatsApp_Image_2023-04-26_at_8.51.04_PM_bmwtro.jpg" alt="marusoft" />
                     <div className="info">
-                        <h4>Marusoft</h4>
+                        <h4>Marusoft Technologies Limited</h4>
                         <span>Frontend Developer</span>
                     </div>
                 </div>
