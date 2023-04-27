@@ -27,7 +27,7 @@ const Header = ({dark, setDark}) => {
           <FaGithub style={{ fontSize: "1.4rem" }} />
         </a>
         <TbBrightnessUp style={{ cursor: "pointer", fontSize: "1.4rem" }} onClick={() => setDark(!dark)} />
-        <button className="contactBtn">{"Contact me ->"}</button>
+        <button className="contactBtn"><a href="https://wa.me/07069013967?text=I'm%20interested%20in%20creating%20my%20business%20website">{"Contact me ->"}</a></button>
         <button
           className="navToggler"
           onClick={() => {

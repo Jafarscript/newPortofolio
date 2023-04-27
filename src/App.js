@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Work from './components/Work/Work';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [dark, setDark] = useState(false)
@@ -15,6 +16,7 @@ function App() {
       <Experience  dark={dark}/>
       <Work dark={dark}/>
       <Contact dark={dark}/>
+      <Footer />
     </div>
   );
 }
