@@ -62,13 +62,24 @@
 
     .navLink{
         position: absolute;
-        top: 40px;
+        top: 50px;
         left: 0;
         width: 100%;
-        background-color: #fff;
         height: 0px;
+        visibility: hidden;
         transition: all 1s ease-in-out;
         overflow: hidden;
+    }
+
+    .navLight{
+        background-color: #fff;
+        border-top: 1px solid #111827;
+    }
+
+    .navDark{
+        background-color: #fff;
+        color: #111827;
+        border-top: 1px solid #F7F3F3;
     }
 
     .navLink ul{
@@ -86,12 +97,24 @@
         border-bottom: 1px solid #F7F3F3;
     }
 
+    .navLink ul li a{
+        width: 100%;
+    }
+
     .navLink ul li:hover{
         background-color: #F7F3F3;
+        color: #111827;
     }
 
     .expanded{
         height: 165px;
+        visibility: visible;
         transition: all 1s ease-in-out;
+    }
+}
+
+@media(max-width: 300px){
+    .header{
+        padding: 20px 10px;
     }
 }

@@ -86,7 +86,11 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .hero h1{
+        font-size: 22px;
+    }
+
     .hero .breif{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }

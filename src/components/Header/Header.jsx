@@ -10,7 +10,7 @@ const Header = ({dark, setDark}) => {
     <section className="header">
       <div>jafarscript</div>
       <div className="navBar">
-        <nav className={ isNavExpanded ? 'navLink expanded' : 'navLink'} onClick={() => {setIsNavExpanded(!isNavExpanded)}}>
+        <nav className={ `${isNavExpanded ? 'navLink expanded' : 'navLink'} ${dark ? 'navDark' : 'navLight'}`} onClick={() => {setIsNavExpanded(!isNavExpanded)}}>
           <ul>
             <li>
               <a href="#hero">Home</a>

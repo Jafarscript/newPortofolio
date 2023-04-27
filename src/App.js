@@ -3,6 +3,7 @@ import './App.css';
 import Experience from './components/Experience/Experience';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
+import Work from './components/Work/Work';
 
 function App() {
   const [dark, setDark] = useState(false)
@@ -11,6 +12,7 @@ function App() {
       <Header dark={dark} setDark={setDark}/>
       <Hero dark={dark}/>
       <Experience  dark={dark}/>
+      <Work dark={dark}/>
     </div>
   );
 }

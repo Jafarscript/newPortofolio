@@ -12,7 +12,7 @@
     height: 36px;
 }
 
-.experience h1{
+.heading{
     font-weight: 700;
     font-size: 48px;
     margin-bottom: 42px;
@@ -103,7 +103,16 @@
         grid-template-columns: 1fr;
     }
 
-    .experience h1{
+    .heading{
         font-size: 30px;
+    }
+}
+
+@media(max-width: 300px){
+    .experience{
+        padding: 92px 10px;
+    }
+    .heading{
+        font-size: 24px;
     }
 }

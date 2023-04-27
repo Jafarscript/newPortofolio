@@ -1,0 +1,141 @@
+.work {
+    padding: 92px 100px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+}
+
+.eachProject {
+    display: flex;
+    flex-direction: column;
+    padding: 26px;
+    border-radius: 10px;
+    gap: 26px;
+}
+
+.eachLight:hover{
+    background: #E3E8ED;
+}
+
+.eachDark:hover{
+    background-color: #172135;
+}
+
+.date{
+    color: rgba(18, 15, 12, 0.4);
+    display: none;
+}
+
+.eachProject:hover  .date{
+    display: block;
+}
+
+.dateDark{
+    color: #F7F3F399;
+    display: block;
+}
+
+.projectHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projectName {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.projectImage {
+    background-image: url('https://res.cloudinary.com/dvo8xhx6r/image/upload/v1639864208/innovation-in-business_g7drfg.jpg');
+    border-radius: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 372px;
+}
+
+.projectStack{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projectLink{
+    display: flex;
+    gap: 16px;
+}
+
+.projectLink a{
+    font-size: 1.5rem;
+}
+
+.projectSkills{
+    font-weight: 400;
+    font-size: 12px;
+    display: flex;
+    gap: 12px;
+}
+
+.projectSkills span{
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+.projectDetials{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.skillLight{
+    background: #E3E8ED;
+}
+
+.skillDark{
+    background-color: #172135;
+}
+
+@media(max-width: 870px){
+    .work{
+        padding: 92px 50px;
+    }
+    .projects{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 750px){
+    .work{
+        padding: 92px 30px;
+    }
+    .projectName{
+        font-size: 24px;
+    }
+
+}
+
+@media(max-width: 300px){
+
+    .work{
+        padding: 92px 10px;
+    }
+
+    .eachProject{
+        padding: 10px;
+    }
+    .projectName{
+        font-size: 18px;
+    }
+
+    .projectDetials{
+        font-size: 12px;
+    }
+
+    .projectLink a{
+        font-size: 1rem;
+    }
+}

@@ -10,7 +10,7 @@ const Experience = ({dark}) => {
 //   }
   return (
     <section className='experience' id='about'>
-        <h1>My experience</h1>
+        <h1 className='heading'>My experience</h1>
         <div className="company">
             <div className="name">
                 <div className={dark ? "each selectedDark" : "each selected"}>
