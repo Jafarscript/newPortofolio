@@ -102,7 +102,7 @@ const Work = ({dark}) => {
               <a href="https://github.com/Jafarscript/short-mern-video" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
               </a>
-              <a href="hhttps://short-video-app.netlify.app" target="_blank" rel="noopener noreferrer">
+              <a href="https://short-video-app.netlify.app" target="_blank" rel="noopener noreferrer">
                 <FiExternalLink />
               </a>
             </div>
