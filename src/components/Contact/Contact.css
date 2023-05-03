@@ -18,6 +18,12 @@
     background-color: #172135;
 }
 
+@media(max-width: 1245px){
+    .contact{
+        padding: 92px 50px;
+    }
+}
+
 @media(max-width: 870px){
     .contact{
         padding: 92px 50px;

@@ -83,6 +83,11 @@
     color: #2563EB;
 }
 
+@media(max-width: 1245px){
+    .experience{
+        padding: 92px 50px;
+    }
+}
 
 @media(max-width: 870px){
     .experience{

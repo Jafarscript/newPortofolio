@@ -98,6 +98,20 @@
     background-color: #172135;
 }
 
+@media(max-width: 1245px){
+    .work{
+        padding: 92px 50px;
+    }
+
+    .projects{
+        justify-content: space-between;
+        gap: 0px;
+    }
+
+    .projectName{
+        font-size: 25px;
+    }
+}
 @media(max-width: 870px){
     .work{
         padding: 92px 50px;
@@ -115,6 +129,18 @@
         font-size: 24px;
     }
 
+    .eachProject{
+        padding: 10px;
+    }
+
+    .projectName{
+        font-size: 20px;
+    }
+
+    .projectDetials{
+        font-size: 12px;
+    }
+
 }
 
 @media(max-width: 300px){
@@ -127,7 +153,7 @@
         padding: 10px;
     }
     .projectName{
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .projectDetials{

@@ -9,6 +9,12 @@
     font-size: 1.4rem;
 }
 
+@media(max-width: 1245px){
+    .footer{
+        padding: 35px 50px;
+    }
+}
+
 
 @media(max-width: 870px){
     .footer{

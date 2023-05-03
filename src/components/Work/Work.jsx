@@ -93,10 +93,7 @@ const Work = ({dark}) => {
           <div className="projectImage" style={{backgroundImage: 'url(https://res.cloudinary.com/dvo8xhx6r/image/upload/v1683110344/20201031052954_detail.036_atjb3v.jpg)'}}></div>
           <div className="projectStack">
           <div className="projectSkills">
-              <span className={dark ? 'skillDark' : 'skillLight'}>Express Js</span>
-              <span className={dark ? 'skillDark' : 'skillLight'}>Node Js</span>
-              <span className={dark ? 'skillDark' : 'skillLight'}>Mondo DB</span>
-              <span className={dark ? 'skillDark' : 'skillLight'}>React Js</span>
+              <span className={dark ? 'skillDark' : 'skillLight'}>MERN</span>
             </div>
             <div className="projectLink">
               <a href="https://github.com/Jafarscript/short-mern-video" target="_blank" rel="noopener noreferrer">
