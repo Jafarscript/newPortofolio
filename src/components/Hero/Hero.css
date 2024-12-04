@@ -45,6 +45,47 @@
     background: #172135;
 }
 
+/* General Button Styling */
+.download-btn {
+    align-self: center;
+}
+.download-btn button {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hover Effects */
+  .download-btn button:hover {
+    background-color: white;
+    transform: scale(1.05);
+    color: #172135;
+  }
+  
+  /* Focus Style */
+  .download-btn button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Active Button Style */
+  .download-btn button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .download-btn button {
+      width: 100%;
+      padding: 0.8rem 1rem;
+    }
+  }
+  
+
 @media(max-width: 870px){
     .hero{
         padding: 92px 50px;

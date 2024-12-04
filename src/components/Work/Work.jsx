@@ -62,10 +62,10 @@ const Work = ({dark}) => {
         </div>
         <div className={dark ? 'eachProject eachDark' : 'eachProject eachLight'}>
           <div className="projectHead">
-            <h2 className="projectName">AL-MANAT</h2>
-            <h5 className={dark ? 'dateDark' : 'date'}>2022</h5>
+            <h2 className="projectName">MovieBase</h2>
+            <h5 className={dark ? 'dateDark' : 'date'}>2024</h5>
           </div>
-          <div className="projectImage"  style={{backgroundImage: 'url(https://res.cloudinary.com/dvo8xhx6r/image/upload/v1683110020/travel-agency-web-design_txi7j5.jpg)'}}></div>
+          <div className="projectImage"  style={{backgroundImage: 'url(https://res.cloudinary.com/dvo8xhx6r/image/upload/v1733304602/ygvwofqljwtwqzljwl1j.png)'}}></div>
           <div className="projectStack">
           <div className="projectSkills">
               <span className={dark ? 'skillDark' : 'skillLight'}>HTML</span>
@@ -73,39 +73,67 @@ const Work = ({dark}) => {
               <span className={dark ? 'skillDark' : 'skillLight'}>React</span>
             </div>
             <div className="projectLink">
-              <a href="https://github.com/Jafarscript" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Jafarscript/moviebase" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
               </a>
-              <a href="https://al-manat.netlify.app" target="_blank" rel="noopener noreferrer">
+              <a href="https://moviebase-sandy.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <FiExternalLink />
               </a>
             </div>
           </div>
           <div className="projectDetials">
-          Travels and Tours agency, Umrah and Hajj agency website
+          Movie Explorer: Discover, Filter, and Bookmark Movies!
           </div>
         </div>
         <div className={dark ? 'eachProject eachDark' : 'eachProject eachLight'}>
           <div className="projectHead">
-            <h2 className="projectName">Short Video App</h2>
-            <h5 className={dark ? 'dateDark' : 'date'}>2022</h5>
+            <h2 className="projectName">Financial Wellness Tracking</h2>
+            <h5 className={dark ? 'dateDark' : 'date'}>2024</h5>
           </div>
-          <div className="projectImage" style={{backgroundImage: 'url(https://res.cloudinary.com/dvo8xhx6r/image/upload/v1683110344/20201031052954_detail.036_atjb3v.jpg)'}}></div>
+          <div className="projectImage" style={{backgroundImage: 'url(https://res.cloudinary.com/dvo8xhx6r/image/upload/v1733304733/t8lev8aojetixxdkcbor.png)'}}></div>
           <div className="projectStack">
           <div className="projectSkills">
-              <span className={dark ? 'skillDark' : 'skillLight'}>MERN</span>
+              <span className={dark ? 'skillDark' : 'skillLight'}>Next JS</span>
+              <span className={dark ? 'skillDark' : 'skillLight'}>Tailwind</span>
+              <span className={dark ? 'skillDark' : 'skillLight'}>Drizzle ORM</span>
+              <span className={dark ? 'skillDark' : 'skillLight'}>PostgreSQL</span>
+              <span className={dark ? 'skillDark' : 'skillLight'}>Clerk</span>
             </div>
             <div className="projectLink">
-              <a href="https://github.com/Jafarscript/short-mern-video" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Jafarscript/final_year_project" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
               </a>
-              <a href="https://short-video-app.netlify.app" target="_blank" rel="noopener noreferrer">
+              <a href="https://final-year-project-seven-ebon.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <FiExternalLink />
               </a>
             </div>
           </div>
           <div className="projectDetials">
-          Short Video App created with MERN stack
+          Manage Your Expense, Control Your Money
+          </div>
+        </div>
+        <div className={dark ? 'eachProject eachDark' : 'eachProject eachLight'}>
+          <div className="projectHead">
+            <h2 className="projectName">Oja Landing Page</h2>
+            <h5 className={dark ? 'dateDark' : 'date'}>2024</h5>
+          </div>
+          <div className="projectImage" style={{backgroundImage: 'url(https://res.cloudinary.com/dvo8xhx6r/image/upload/v1733305862/q0wrxpfzw0zjdvi19btm.png)'}}></div>
+          <div className="projectStack">
+          <div className="projectSkills">
+              <span className={dark ? 'skillDark' : 'skillLight'}>Tailwind</span>
+              <span className={dark ? 'skillDark' : 'skillLight'}>React</span>
+            </div>
+            <div className="projectLink">
+              <a href="https://github.com/Jafarscript/50react-projects/tree/main/marketing-website" target="_blank" rel="noopener noreferrer">
+                <FaGithub />
+              </a>
+              <a href="https://ojamarket.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <FiExternalLink />
+              </a>
+            </div>
+          </div>
+          <div className="projectDetials">
+          Shoe Store Landing Page
           </div>
         </div>
       </main>
