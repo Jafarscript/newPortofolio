@@ -19,7 +19,7 @@ const Hero = ({dark}) => {
             <span className={dark ? 'skill skillDark' : 'skill skillLight'}><SiTailwindcss />Tailwind</span>
             <span className={dark ? 'skill skillDark' : 'skill skillLight'}><FaNodeJs />Nodejs</span>
         </div>
-        <a href="/Main.pdf" download className="download-btn">
+        <a href="./Main.pdf" download className="download-btn">
         <button className={dark ? 'skill skillDark' : 'skill skillLight'}>Download Resume</button>
       </a>
     </section>
