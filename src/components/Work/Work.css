@@ -15,6 +15,7 @@
     padding: 26px;
     border-radius: 10px;
     gap: 26px;
+    overflow: hidden;
 }
 
 .eachLight:hover{
@@ -63,6 +64,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .projectLink{
@@ -89,6 +91,7 @@
 .projectDetials{
     font-size: 16px;
     font-weight: 400;
+    text-wrap: wrap;
 }
 
 .skillLight{
@@ -131,7 +134,8 @@
     }
 
     .eachProject{
-        padding: 10px;
+        padding: 5px;
+        width: 100%;
     }
 
     .projectName{
