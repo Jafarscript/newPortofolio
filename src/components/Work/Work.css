@@ -122,6 +122,7 @@
     }
     .projects{
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 }
 
@@ -134,7 +135,7 @@
     }
 
     .eachProject{
-        padding: 5px;
+        padding: 10px;
         width: 100%;
     }
 
