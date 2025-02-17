@@ -76,7 +76,7 @@ const Work = ({dark}) => {
               <a href="https://github.com/Jafarscript/moviebase" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
               </a>
-              <a href="https://moviebase-sandy.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <a href="https://moviebase-zeta.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <FiExternalLink />
               </a>
             </div>
