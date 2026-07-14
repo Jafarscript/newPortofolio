@@ -1,0 +1,146 @@
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+.headerInner{
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 18px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.logo{
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.logoBracket{
+  color: var(--accent);
+}
+
+.navLinks ul{
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.navLinks a{
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  transition: color var(--transition);
+  position: relative;
+}
+
+.navLinks a:hover{
+  color: var(--text);
+}
+
+.headerActions{
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.iconLink{
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  display: flex;
+  transition: color var(--transition);
+}
+
+.iconLink:hover{
+  color: var(--text);
+}
+
+.themeToggle{
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  transition: color var(--transition), transform var(--transition);
+}
+
+.themeToggle:hover{
+  color: var(--accent);
+  transform: rotate(20deg);
+}
+
+.contactBtn{
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  padding: 9px 18px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  border-radius: 999px;
+  transition: background var(--transition), color var(--transition);
+  white-space: nowrap;
+}
+
+.contactBtn:hover{
+  background: var(--accent);
+  color: var(--accent-contrast);
+}
+
+.navToggler{
+  display: none;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 860px){
+  .navLinks{
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    transform: translateY(-120%);
+    opacity: 0;
+    transition: transform var(--transition), opacity var(--transition);
+    pointer-events: none;
+  }
+
+  .navLinks.expanded{
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .navLinks ul{
+    flex-direction: column;
+    padding: 24px 32px;
+    gap: 20px;
+  }
+
+  .contactBtn{
+    display: none;
+  }
+
+  .navToggler{
+    display: flex;
+  }
+}
+
+@media (max-width: 500px){
+  .headerInner{
+    padding: 14px 20px;
+  }
+
+  .iconLink{
+    display: none;
+  }
+}

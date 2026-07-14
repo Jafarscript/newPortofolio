@@ -1,0 +1,40 @@
+.focusGrid{
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.focusCard{
+  background: var(--surface);
+  padding: 32px;
+  transition: background var(--transition);
+}
+
+.focusCard:hover{
+  background: var(--surface-2);
+}
+
+.focusCard h3{
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+}
+
+.focusCard p{
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 700px){
+  .focusGrid{
+    grid-template-columns: 1fr;
+  }
+}

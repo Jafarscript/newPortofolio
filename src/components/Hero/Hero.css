@@ -1,0 +1,163 @@
+.hero{
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 88px 32px 100px;
+}
+
+.heroGrid{
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.heroCopy .eyebrow{
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.heroHeadline{
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.2rem, 4.2vw, 3.4rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  margin-bottom: 22px;
+}
+
+.heroBrief{
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+  max-width: 46ch;
+  margin-bottom: 34px;
+}
+
+.heroActions{
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn{
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  padding: 13px 24px;
+  border-radius: 999px;
+  transition: background var(--transition), color var(--transition), border-color var(--transition), transform var(--transition);
+  display: inline-flex;
+  align-items: center;
+}
+
+.btnPrimary{
+  background: var(--accent);
+  color: var(--accent-contrast);
+}
+
+.btnPrimary:hover{
+  transform: translateY(-2px);
+}
+
+.btnGhost{
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.btnGhost:hover{
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Terminal signature panel */
+.terminal{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.terminalBar{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 18px;
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--border);
+}
+
+.dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dotRed{ background: #E5645A; }
+.dotYellow{ background: #E3B341; }
+.dotGreen{ background: #3FB27F; }
+
+.terminalTitle{
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-left: 8px;
+}
+
+.terminalBody{
+  padding: 26px 24px 30px;
+  font-family: var(--font-mono);
+}
+
+.terminalLine{
+  margin-bottom: 20px;
+}
+
+.terminalLine:last-child{
+  margin-bottom: 0;
+}
+
+.terminalPrompt{
+  color: var(--accent);
+}
+
+.terminalLine{
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+.terminalOut{
+  color: var(--text);
+  margin-top: 6px;
+  font-size: 0.95rem;
+}
+
+.cursor{
+  display: inline-block;
+  width: 7px;
+  height: 15px;
+  background: var(--accent);
+  margin-left: 6px;
+  vertical-align: middle;
+  animation: blink 1.1s steps(1) infinite;
+}
+
+@keyframes blink{
+  50%{ opacity: 0; }
+}
+
+@media (max-width: 900px){
+  .heroGrid{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px){
+  .hero{
+    padding: 56px 20px 72px;
+  }
+
+  .heroActions{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
