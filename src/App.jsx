@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { Float, MeshTransmissionMaterial, OrbitControls, Stars } from '@react-three/drei'
+import { Float, OrbitControls, Stars } from '@react-three/drei'
 import { ArrowDownRight, ArrowUpRight, Mail, MapPin, MousePointer2, Sparkles } from 'lucide-react'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import './App.css'
@@ -14,19 +14,31 @@ const projects = [
 const skills = ['React', 'Next.js', 'TypeScript', 'Node.js', 'Express', 'MongoDB', 'REST APIs', 'Vite', 'Tailwind CSS', 'GSAP', 'Framer Motion', 'Three.js']
 
 function Orb() {
-  const mesh = useRef()
+  const group = useRef()
+  const knot = useRef()
   useFrame((state, delta) => {
-    if (!mesh.current) return
-    mesh.current.rotation.x += delta * 0.18
-    mesh.current.rotation.y += delta * 0.28
-    mesh.current.position.y = Math.sin(state.clock.elapsedTime * 0.7) * 0.12
+    if (!group.current || !knot.current) return
+    group.current.rotation.y += delta * 0.16
+    knot.current.rotation.x += delta * 0.22
+    knot.current.rotation.z += delta * 0.12
+    group.current.position.y = Math.sin(state.clock.elapsedTime * 0.8) * 0.12
   })
   return (
-    <Float speed={1.5} rotationIntensity={0.5} floatIntensity={0.7}>
-      <mesh ref={mesh} scale={1.75}>
-        <icosahedronGeometry args={[1, 2]} />
-        <MeshTransmissionMaterial backside backsideThickness={0.5} thickness={0.8} roughness={0.18} chromaticAberration={0.08} anisotropy={0.35} distortion={0.22} distortionScale={0.35} temporalDistortion={0.12} color="#b6a4ff" />
-      </mesh>
+    <Float speed={1.2} rotationIntensity={0.25} floatIntensity={0.55}>
+      <group ref={group} scale={1.28}>
+        <mesh ref={knot}>
+          <torusKnotGeometry args={[1.12, 0.28, 160, 32, 2, 3]} />
+          <meshPhysicalMaterial color="#255cff" roughness={0.14} metalness={0.32} clearcoat={1} clearcoatRoughness={0.12} iridescence={0.45} iridescenceIOR={1.4} />
+        </mesh>
+        <mesh rotation={[Math.PI / 2, 0, 0]} scale={1.42}>
+          <torusGeometry args={[1.18, 0.018, 12, 96]} />
+          <meshBasicMaterial color="#ff7657" transparent opacity={0.9} />
+        </mesh>
+        <mesh rotation={[0, Math.PI / 2, 0]} scale={1.58}>
+          <torusGeometry args={[1.18, 0.012, 12, 96]} />
+          <meshBasicMaterial color="#9bb7ff" transparent opacity={0.65} />
+        </mesh>
+      </group>
     </Float>
   )
 }
@@ -70,7 +82,7 @@ function App() {
           <div className="hero-actions"><a className="primary-button" href="#work">Explore my work <ArrowDownRight size={17} /></a><a className="text-link" href="./Main.pdf" download>Download résumé <ArrowUpRight size={15} /></a></div>
           <div className="hero-meta"><span><MapPin size={14} /> Lagos, Nigeria</span><span>Open to remote</span></div>
         </div>
-        <div className="hero-scene" aria-label="Interactive 3D lavender orb"><Scene /><div className="scene-caption"><MousePointer2 size={14} /> Drag to explore</div><div className="scene-label">Three.js / 01</div></div>
+        <div className="hero-scene" aria-label="Interactive 3D torus knot sculpture"><Scene /><div className="scene-caption"><MousePointer2 size={14} /> Drag to explore</div><div className="scene-label">Three.js / 01</div></div>
         <a className="scroll-cue" href="#about"><span>Scroll to discover</span><ArrowDownRight size={18} /></a>
       </section>
 
